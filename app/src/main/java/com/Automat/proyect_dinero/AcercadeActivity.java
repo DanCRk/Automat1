@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class AcercadeActivity extends Activity {
 
     TextView textView, textView1, textView2;
-
+//si
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
