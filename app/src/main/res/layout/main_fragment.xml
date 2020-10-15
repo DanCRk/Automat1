@@ -11,72 +11,59 @@
         android:id="@+id/bienvenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="117dp"
-        android:layout_marginEnd="117dp"
-        android:layout_marginBottom="20dp"
         android:text="Bienvenido"
         android:textAlignment="center"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/Texto"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_interfaz" />
 
     <TextView
         android:id="@+id/Apuntes"
-        android:layout_width="292dp"
-        android:layout_height="66dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Nuestra meta es que tengas lo necesario para aprender, no olvides mandarnos tus sugerencias."
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/Actu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
+        app:layout_constraintTop_toBottomOf="@+id/Texto" />
 
     <TextView
         android:id="@+id/Texto"
         android:layout_width="284dp"
         android:layout_height="37dp"
+        android:layout_marginTop="40dp"
         android:text="Apuntes a la mano, listos para ti."
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/Apuntes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintTop_toBottomOf="@+id/bienvenido" />
 
     <TextView
         android:id="@+id/Actu"
         android:layout_width="350dp"
         android:layout_height="73dp"
+        android:layout_marginTop="40dp"
         android:text="¡Siguenos en nuestras redes para enterarte de nuevas actualizaciones! "
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/adView_Main"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintTop_toBottomOf="@+id/Apuntes" />
 
     <TextView
         android:id="@+id/logo_interfaz"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="151dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/imagen_logo"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/bienvenido"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView_Main"
