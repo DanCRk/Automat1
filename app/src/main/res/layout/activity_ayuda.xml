@@ -54,9 +54,10 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Los formatos se pueden descargar haciendo click sobre dicho formato, te llevara a una pagina donde podras descargarlo facilente."
+        android:text="Los formatos se pueden descargar pulando sobre dicho formato, te llevara a una pagina donde podras descargarlo facilente."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
@@ -81,6 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/funcionesmas" />
 
         <Button
