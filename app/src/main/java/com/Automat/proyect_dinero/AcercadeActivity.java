@@ -52,7 +52,7 @@ public class AcercadeActivity extends Activity {
             public void onClick(View v) {
                 Intent compartir = new Intent(Intent.ACTION_SEND);
                 compartir.setType("text/plain");
-                String mensaje = "Comparte la app:)";
+                String mensaje = "Comparte la app con tus amigos: https://play.google.com/store/apps/details?id=com.Automat.proyect_dinero";
                 compartir.putExtra(Intent.EXTRA_SUBJECT,"App prrona");
                 compartir.putExtra(Intent.EXTRA_TEXT, mensaje);
                 startActivity(Intent.createChooser(compartir,"Compartir via"));
