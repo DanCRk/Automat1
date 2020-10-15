@@ -10,6 +10,12 @@
     <string name="tab_text_1">Opción 1</string>
     <string name="tab_text_2">Opción 2</string>
     <string name="tab_text_3">Opción 3 </string>
+    <!-- Este es ael anuncio de prueba
     <string name="prueba_add">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="shido_add">ca-app-pub-2030839089746380/2174627266</string>
+    -->
+
+    <!-- Este es ael anuncio de a debis
+
+     -->
+    <string name="prueba_add">ca-app-pub-2030839089746380/2174627266</string>
 </resources>
