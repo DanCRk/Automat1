@@ -8,8 +8,8 @@ android {
         applicationId "com.Automat.proyect_dinero"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 4
-        versionName "1.2.1"
+        versionCode 5
+        versionName "1.3.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
