@@ -72,7 +72,7 @@ public class Tab4Materiales extends Fragment {
         listaMateriales.add(new EquipoMateriales("Acero 1060 (Acero al carbon)","Se utiliza donde haya mucho desgaste. Este acero templado puede alcanzar una alta resistencia a la " +
                 "tensión y resistencia al desgaste. Aplicaciones: Implementos agrícolas, porta herramientas, discos de embrague, ejes, flechas, cinceles.",0));
 
-        listaMateriales.add(new EquipoMateriales("Acero (AISI) 5115","se utiliza en la elaboración de máquinas en general, también puede ser utilizados para la producción de moldes " +
+        listaMateriales.add(new EquipoMateriales("Acero (AISI) 5115","Se utiliza en la elaboración de máquinas en general, también puede ser utilizados para la producción de moldes " +
                 "para plástico, resina sintética, placas de base, barras de plegado, columnas guía, piezas de engranaje, piezas de articulación, ejes, engranajes, bielas, pernos del émbolo, árbol de levas," +
                 " bulones, espigas.",0));
 
@@ -124,7 +124,7 @@ public class Tab4Materiales extends Fragment {
         listaMateriales.add(new EquipoMateriales("Acero SISA H-13","Provee un buen balance de tenacidad, alta resistencia a la formación de grietas causadas por el " +
                 "choque térmico y resistencia al revenido, junto con resistencia al desgaste moderada. De temple al aire, es utilizado en la mayoría de las aplicaciones a durezas de 44-52 HRC.",0));
 
-        listaMateriales.add(new EquipoMateriales("Acero O-1","se utiliza como material de piezas duras. Las aplicaciones típicas para el acero para herramientas" +
+        listaMateriales.add(new EquipoMateriales("Acero O-1","Se utiliza como material de piezas duras. Las aplicaciones típicas para el acero para herramientas" +
                 " O-1 son troqueles, moldes y molduras, calibradores, cortadores de corte, etc.",0));
 
         listaMateriales.add(new EquipoMateriales("Acero AISI O-2","Es un acero para herramientas de uso general de buena calidad que se usa a menudo cuando el" +
@@ -176,7 +176,7 @@ public class Tab4Materiales extends Fragment {
         listaMateriales.add(new EquipoMateriales("Laminas Antidesgaste","Es un acero de alto límite elástico y resistencia al desgaste, con una dureza y una tenacidad " +
                 "favorables. Con este tipo de lámina podrá aumentar la vida útil de la maquinaria, disminuir el desgaste de los componentes estructurales y reducir costes.",R.drawable.laminas_antidesgaste));
 
-        listaMateriales.add(new EquipoMateriales("XAR-plus","permite corte térmico, conformado en frío y soldadura, entregando gran flexibilidad para la " +
+        listaMateriales.add(new EquipoMateriales("XAR-plus","Permite corte térmico, conformado en frío y soldadura, entregando gran flexibilidad para la " +
                 "fabricación de piezas de desgaste para aplicaciones en la industrias minera, de movimiento de tierras, cementera, de la madera y celulosa entre otras.",0));
 
         listaMateriales.add(new EquipoMateriales("Brinar 500Cr","Es indicado para todos los procedimientos de soldadura conocidos. El material debe " +
@@ -196,13 +196,13 @@ public class Tab4Materiales extends Fragment {
                 "en ninguno de los tipos de aceros, y su base principal puede ser la de cualquier otro elemento metálico; tales como aluminio, plata, cobre," +
                 " berilio, magnesio, titanio, etc.",R.drawable.aleaciones_noferrosas));
 
-        listaMateriales.add(new EquipoMateriales("SAE 660 (Bronce C932 o UNSC93200)","es ideal para uso industrial en general ya que está diseñada para trabajos semipesados. " +
+        listaMateriales.add(new EquipoMateriales("SAE 660 (Bronce C932 o UNSC93200)","Es ideal para uso industrial en general ya que está diseñada para trabajos semipesados. " +
                 "Compacto y uniforme, el bronce UNS C93200 cuenta con óptimas características antifricción y, a velocidades medias tiene gran resistencia al desgaste.",0));
 
         listaMateriales.add(new EquipoMateriales("Aleaciones Ferrosas","son las que tienen como elemento principal el hierro, combinado con otros elementos. " +
                 "El principal de ellos es el carbono, cuya distribución y forma en el hierro o su reacción con éste formando carburos, le da varias de sus características.",R.drawable.aleaciones_ferrosas));
 
-        listaMateriales.add(new EquipoMateriales("Hierro Gris"," Es el hierro colado de uso más común. Sus escamas de grafito le dan" +
+        listaMateriales.add(new EquipoMateriales("Hierro Gris","Es el hierro colado de uso más común. Sus escamas de grafito le dan" +
                 "apariencia y nombre. La ASTM gradúa el hierro gris en siete clases, basadas en resistencia mínima a la" +
                 "tensión en kpsi.",0));
 
