@@ -58,7 +58,7 @@ public class Tab4Materiales extends Fragment {
 
         listaMateriales.add(new EquipoMateriales("Aceros de Maquinarias","Los Aceros grado maquinaria generalmente son aceros muy versátiles de baja aleación utilizados para " +
                 "la construcción o reparación de maquinaria en general. Existen varios grupos o sub-familias dentro de los aceros Maquinaria, designados así, en función a los elementos aleantes de mayor presencia " +
-                "en su composición química.",R.drawable.tabla_aceros_maquinarias));
+                "en su composición química.",R.drawable.sis));
 
         listaMateriales.add(new EquipoMateriales("Acero (AISI) 3115","Es un acero para maquinaria, utilizado para aplicaciones donde requieran dureza y resistencia superficial entre " +
                 "otras, además aplicables en componentes de transmisión de la industria automovilística.",0));
@@ -104,7 +104,7 @@ public class Tab4Materiales extends Fragment {
 
         listaMateriales.add(new EquipoMateriales("Aceros de Herramientas","Es el acero que normalmente se emplea para la fabricación de útiles o herramientas destinados a" +
                 " modificar la forma, " +
-                "tamaño y dimensiones de los materiales por cortadura, presión o arranque de viruta.",R.drawable.tabla_aceros_herramientas));
+                "tamaño y dimensiones de los materiales por cortadura, presión o arranque de viruta.",R.drawable.aceros_herramientas));
 
         listaMateriales.add(new EquipoMateriales("Acero D-2 (De Temple al Aire)","Tiene un alto contenido de carbón y cromo y con muy alta resistencia al desgaste y mínimo cambio " +
                 "dimensional después del tratamiento térmico. Por sus propiedades es ideal para la fabricación de dados de alta producción y en las herramientas para trabajo en frío de diseño muy intrincado.",0));
