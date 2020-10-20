@@ -23,9 +23,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="SUGERENCIAS"
+            android:text="PREGUNTAS YS UGERENCIAS"
             android:textColor="@color/cardview_light_background"
-            android:textSize="23sp"
+            android:textSize="20sp"
             tools:ignore="HardcodedText,PrivateResource" />
 
         <TextView
@@ -37,18 +37,21 @@
     </androidx.appcompat.widget.Toolbar>
 
     <EditText
-        android:id="@+id/descripcion_sugerencias"
+        android:id="@+id/t_Men"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
+        android:layout_height="160dp"
+        android:layout_marginTop="32dp"
+        android:gravity="top"
+        android:padding="12dp"
         android:backgroundTint="@color/principal_rojo"
-        android:hint="Decribre la sugerencia"
-        android:inputType="textAutoComplete"
+        android:hint="Describe la suerencia y/o pregunta"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="Autofill,LabelFor,TextFields" />
 
     <Button
-        android:id="@+id/enviar_sugerencias"
+        android:id="@+id/b_en"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"

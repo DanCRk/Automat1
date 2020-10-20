@@ -91,23 +91,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:background="@drawable/boton_redondo"
-        android:text="Preguntas"
+        android:text="Preguntas y Sugerencias"
         android:textColor="@drawable/txt_btn"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-        android:id="@+id/sugerencias"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:background="@drawable/boton_redondo"
-        android:onClick="clickear2"
-        android:text="Sugerencias"
-        android:textColor="@drawable/txt_btn"
-        app:layout_constraintBottom_toTopOf="@+id/preguntas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />

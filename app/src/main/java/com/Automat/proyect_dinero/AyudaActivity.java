@@ -16,6 +16,7 @@ public class AyudaActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ayuda);
+
         textView = findViewById(R.id.boton_atras);
 
         textView.setOnClickListener(new View.OnClickListener() {
@@ -26,8 +27,8 @@ public class AyudaActivity extends Activity {
                 finish();
             }
         });
-        boton1 = findViewById(R.id.sugerencias);
-        boton2 = findViewById(R.id.preguntas);
+
+        boton1 = findViewById(R.id.preguntas);
 
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
