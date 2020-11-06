@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -15,6 +16,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import com.google.android.gms.ads.InterstitialAd;
 
 import com.Automat.proyect_dinero.fragments.GlosarioFragment;
 import com.Automat.proyect_dinero.fragments.MainFragment;
@@ -22,6 +24,10 @@ import com.Automat.proyect_dinero.fragments.ManufacturaFragment;
 import com.Automat.proyect_dinero.fragments.MaterialesFragment;
 import com.Automat.proyect_dinero.fragments.MetrologiaFragment;
 import com.Automat.proyect_dinero.fragments.TornoFragment;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -39,12 +45,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
 
+    private InterstitialAd mInterstitialAd;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {}
+        });
+
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-2030839089746380/1591510629");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
         // Referenciar las weas locas
 
@@ -98,6 +115,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         textView = findViewById(R.id.texto_toolbar);
         drawerLayout.closeDrawer(GravityCompat.START);
         if (menuItem.getItemId() == R.id.home){
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                Log.d("TAG", "The interstitial wasn't loaded yet.");
+            }
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new MainFragment());
@@ -105,6 +127,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             textView.setText("PRINCIPAL");
         }
         if (menuItem.getItemId() == R.id.metrologia){
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                Log.d("TAG", "The interstitial wasn't loaded yet.");
+            }
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new MetrologiaFragment());
@@ -112,6 +139,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             textView.setText("METROLOGIA");
         }
         if (menuItem.getItemId() == R.id.materiales){
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                Log.d("TAG", "The interstitial wasn't loaded yet.");
+            }
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new MaterialesFragment());
@@ -119,6 +151,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             textView.setText("MATERIALES");
         }
         if (menuItem.getItemId() == R.id.manufactura){
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                Log.d("TAG", "The interstitial wasn't loaded yet.");
+            }
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new ManufacturaFragment());
@@ -126,6 +163,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             textView.setText("MANUFACTURA");
         }
         if (menuItem.getItemId() == R.id.torno_fresa){
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                Log.d("TAG", "The interstitial wasn't loaded yet.");
+            }
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new TornoFragment());
@@ -133,6 +175,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             textView.setText("TORNO Y FRESA");
         }
         if (menuItem.getItemId() == R.id.glosario){
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                Log.d("TAG", "The interstitial wasn't loaded yet.");
+            }
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new GlosarioFragment());

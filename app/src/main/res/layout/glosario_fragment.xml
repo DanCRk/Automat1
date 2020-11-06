@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/prueba_add"/>
+        ads:adUnitId="ca-app-pub-2030839089746380/3174310759"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewPalabras"

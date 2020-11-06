@@ -41,7 +41,7 @@ public class TornoFragment extends Fragment{
 
         AdView adView = new AdView(getContext());
         adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+        adView.setAdUnitId("ca-app-pub-2030839089746380/3174310759");
 
         AdView mAdView = view.findViewById(R.id.adView_Trn);
         AdRequest adRequest = new AdRequest.Builder().build();
